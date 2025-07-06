@@ -38,6 +38,8 @@ kubectl -n argocd get pods
 
 Ensure all pods like `argocd-application-controller`, `argocd-repo-server`, and `argocd-server` are in `Running` state.
 
+![pods of argo](https://github.com/user-attachments/assets/266ed689-dbe8-4c25-9eb4-42ff5dc565b0)
+
 ---
 
 ### ✅ Step 2: Check Application Status
@@ -66,14 +68,17 @@ Since ArgoCD controller is a StatefulSet:
 ```bash
 kubectl -n argocd rollout restart statefulset argocd-application-controller
 ```
+![statefulset argo](https://github.com/user-attachments/assets/1c897c80-3f97-4c59-aa02-86da1b300927)
+
 
 Restart the repo server as well:
 
 ```bash
 kubectl -n argocd rollout restart deployment argocd-repo-server
 ```
+![commands restart](https://github.com/user-attachments/assets/1995b430-74b4-46f3-8e9e-748a4e89b0ca)
 
-Wait 30–60 seconds for pods to restart.
+Wait 30 seconds for pods to restart.
 
 ---
 
@@ -89,19 +94,19 @@ Or refresh from the UI.
 
 ---
 
-## 📷 Optional Screenshots
+## 📷 Screenshots
 
 <details>
   <summary>🔍 Stuck UI Before Fix</summary>
 
-![Stuck Refreshing UI](./images/stuck-refreshing-ui.png)
+![Screenshot 2025-07-01 155259](https://github.com/user-attachments/assets/4869d319-fe0e-4958-ba9d-0983deb7f4c4)
 
 </details>
 
 <details>
   <summary>✅ App After Restart</summary>
 
-![App Unstuck](./images/app-after-restart.png)
+![image](https://github.com/user-attachments/assets/a2eebd66-4a07-493e-831e-9cffef9e0c98)
 
 </details>
 
