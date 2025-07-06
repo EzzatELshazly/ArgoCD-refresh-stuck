@@ -3,7 +3,7 @@
 
 ## 📌 Problem
 
-In two separate clusters, ArgoCD applications (e.g., `forecast-dev`) appeared to be stuck in the **"Refreshing…"** state in both the **Web UI** and **CLI**:
+ ArgoCD applications (e.g., `forecast-dev`) appeared to be stuck in the **"Refreshing…"** state in both the **Web UI** and **CLI**:
 
 ```bash
 argocd app get forecast-dev --refresh
@@ -11,6 +11,7 @@ argocd app get forecast-dev --refresh
 ```
 
 Even after successful syncs, the application showed no errors in UI but failed to exit the refresh state.
+![Screenshot 2025-07-01 155259](https://github.com/user-attachments/assets/ae349ab3-8e0c-4b50-8965-01243446d741)
 
 ---
 
@@ -22,6 +23,8 @@ After investigation:
 - The application's last operation had **succeeded**.
 - The CLI was also **stuck**, confirming it wasn't a UI bug.
 - The refresh operation was blocked internally, likely due to a stale internal state or controller/repo-server deadlock.
+
+![Screenshot 2025-07-01 155355](https://github.com/user-attachments/assets/99745cb9-3157-494b-8746-15f25c660cf8) 
 
 ---
 
