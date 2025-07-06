@@ -5,7 +5,7 @@
   <img src="https://github.com/user-attachments/assets/7c474710-f6b8-4ece-bd10-e9efdbb74592" alt="ArgoCD Refreshing UI" width="500" height="500" />
 </p>
 
-## 📌 Problem
+##  Problem
 
  ArgoCD applications appeared to be stuck in the **"Refreshing…"** state in both the **Web UI** and **CLI**:
 
@@ -19,7 +19,7 @@ Even after successful syncs, the application showed no errors in UI but failed t
 
 ---
 
-## 🧠 Root Cause
+## Root Cause
 
 After investigation:
 
@@ -32,7 +32,7 @@ After investigation:
 
 ---
 
-## 🛠️ Resolution Steps
+##  Resolution Steps
 
 ### ✅ Step 1: Confirm All ArgoCD Pods Are Running
 
@@ -116,7 +116,7 @@ Or refresh from the UI.
 
 ---
 
-## 🔁 Optional: Debug Logs (If Issue Persists)
+## Optional: Debug Logs (If Issue Persists)
 
 Check the controller and repo-server logs:
 
@@ -132,7 +132,7 @@ Look for:
 
 ---
 
-## 📎 Notes
+##  Notes
 
 - This issue was observed in multiple clusters.
 - Most likely caused by a race condition or internal queue block inside ArgoCD’s controller.
@@ -140,7 +140,7 @@ Look for:
 
 ---
 
-## 🧼 Preventative Suggestions
+##  Preventative Suggestions
 
 - Monitor ArgoCD with alerts on stuck operations.
 - Consider periodic controller restarts if this becomes common.
