@@ -1,7 +1,9 @@
 
 # 🌀 ArgoCD Stuck in “Refreshing…” State — Troubleshooting & Resolution
 
-<img src="https://github.com/user-attachments/assets/7c474710-f6b8-4ece-bd10-e9efdbb74592" alt="ArgoCD Refreshing UI" width="auto" height="auto" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7c474710-f6b8-4ece-bd10-e9efdbb74592" alt="ArgoCD Refreshing UI" width="600" height="auto" />
+</p>
 
 ## 📌 Problem
 
