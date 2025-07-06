@@ -1,6 +1,7 @@
 
 # 🌀 ArgoCD Stuck in “Refreshing…” State — Troubleshooting & Resolution
 ![Argo-1-e1630327305635-1](https://github.com/user-attachments/assets/7c474710-f6b8-4ece-bd10-e9efdbb74592)
+![Argo](https://github.com/user-attachments/assets/7c474710-f6b8-4ece-bd10-e9efdbb74592){: width="300" height="auto"}
 ## 📌 Problem
 
  ArgoCD applications appeared to be stuck in the **"Refreshing…"** state in both the **Web UI** and **CLI**:
