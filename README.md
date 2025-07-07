@@ -17,6 +17,9 @@ argocd app get forecast-dev --refresh
 Even after successful syncs, the application showed no errors in UI but failed to exit the refresh state.
 ![Screenshot 2025-07-01 155259](https://github.com/user-attachments/assets/ae349ab3-8e0c-4b50-8965-01243446d741)
 
+# Like this screenshot
+<img width="1253" alt="89298347-df0a6080-d66d-11ea-952d-965a130ba18a" src="https://github.com/user-attachments/assets/96414549-8d21-4a42-bdfa-44b1dfb1efb4" />
+
 ---
 
 ## - Root Cause
