@@ -68,12 +68,11 @@ If there is **no active operation**, the refresh should not hang.
 ### ✅ Step 3: Restart Controller and Repo Server
 
 Since ArgoCD controller is a StatefulSet:
+![statefulset argo](https://github.com/user-attachments/assets/1c897c80-3f97-4c59-aa02-86da1b300927)
 
 ```bash
 kubectl -n argocd rollout restart statefulset argocd-application-controller
 ```
-![statefulset argo](https://github.com/user-attachments/assets/1c897c80-3f97-4c59-aa02-86da1b300927)
-
 
 Restart the repo server as well:
 
